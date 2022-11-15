@@ -1,0 +1,35 @@
+.story {
+    display: flex !important;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 14px 0;
+    font-size: 12px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.story .imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 66px;
+    width: 66px;
+    /* background-image: url('../assets/img/story-circle.svg'); */
+}
+
+.story .imagem img {
+    width: 56px;
+    height: 56px;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.story .usuario {
+    width: 66px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    height: 14px;
+}

@@ -1,0 +1,29 @@
+#stories {
+    display: flex !important;
+    align-items: center;
+    height: 118px;
+    border-radius: 3px;
+    border: 1px solid #DBDBDB;
+    padding: 0 18px;
+    overflow: hidden;
+    position: relative;
+}
+
+#setinha {
+    position: absolute;
+    right: 10px;
+    top: 45px;
+    height: 32px;
+    width: 32px;
+    color: #FFFFFF;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+@media (max-width: 614px) {
+    #stories {
+        background-color: transparent;
+        border: none;
+        width: 100%;
+    }
+}
