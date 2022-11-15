@@ -1,0 +1,95 @@
+#navbar {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    height: 54px;
+    border-bottom: 1px solid #DBDBDB;
+    font-size: 22px;
+    background-color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#navbar span, #navbar img {
+    cursor: pointer;
+}
+
+#container {
+    width: 100%;
+    max-width: 935px;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+#container > * {
+    display: flex !important;
+    align-items: center;
+    height: 100%;
+}
+
+#logo img {
+    position: relative;
+    top: 3px;
+}
+
+#separador {
+    width: 1px;
+    height: 22px;
+    background-color: #DBDBDB;
+    margin: 0 10px;
+}
+
+#pesquisa input {
+    width: 215px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    color: #979797;
+    text-align: center;
+}
+
+#icones span {
+    margin: 0 5px;
+}
+
+#icones-mobile, #logo-mobile, #instagram-mobile {
+    display: none !important;
+}
+
+@media (max-width: 935px) {
+    #container {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 614px) {
+    #pesquisa {
+        display: none !important;
+    }
+
+    #icones {
+        display: none !important;
+    }
+    
+    #icones-mobile {
+        display: flex !important;
+    }
+
+    #logo {
+        display: none !important;
+    }
+    
+    #logo-mobile, #instagram-mobile {
+        display: flex !important;
+    }
+    
+    #instagram-mobile {
+        position: relative;
+        top: 4px;
+    }
+}
