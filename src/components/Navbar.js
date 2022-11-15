@@ -8,12 +8,12 @@ const Navbar = () => (
     <div id="navbar">
         <div id="container">
             <div id="logo">
-                <LogoInstagram color={"#000000"}></LogoInstagram>
+                <LogoInstagram cssClasses="ion-icon" color="#262626" width="22px" height="22px"></LogoInstagram>
                 <div id="separador"></div>
                 <img src={logo} alt="" />
             </div>
             <div id="logo-mobile">
-                <LogoInstagram color={"#000000"}></LogoInstagram>
+                <LogoInstagram cssClasses="ion-icon" color="#262626"></LogoInstagram>
             </div>
             <div id="instagram-mobile">
                 <img src={logo} alt="" />
@@ -22,13 +22,13 @@ const Navbar = () => (
                 <input type="text" placeholder="Pesquisar" />
             </div>
             <div id="icones">
-                <PaperPlaneOutline color={"#000000"}></PaperPlaneOutline>
-                <CompassOutline color={"#000000"}></CompassOutline>
-                <HeartOutline color={"#000000"}></HeartOutline>
-                <PersonOutline color={"#000000"}></PersonOutline>
+                <PaperPlaneOutline cssClasses="ion-icon" color="#262626"></PaperPlaneOutline>
+                <CompassOutline cssClasses="ion-icon" color="#262626"></CompassOutline>
+                <HeartOutline cssClasses="ion-icon" color="#262626"></HeartOutline>
+                <PersonOutline cssClasses="ion-icon" color="#262626"></PersonOutline>
             </div>
             <div id="icones-mobile">
-                <PaperPlaneOutline color={"#000000"}></PaperPlaneOutline>
+                <PaperPlaneOutline cssClasses="ion-icon" color="#262626"></PaperPlaneOutline>
             </div>
         </div>
     </div>

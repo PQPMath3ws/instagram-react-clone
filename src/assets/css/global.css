@@ -12,3 +12,7 @@ body {
     font-weight: 400;
     font-size: 14px;
 }
+
+span.ion-icon {
+    visibility: visible;
+}
