@@ -13,6 +13,6 @@ body {
     font-size: 14px;
 }
 
-span.ion-icon {
+svg.ion-icon {
     visibility: visible;
 }
