@@ -31,15 +31,4 @@ const Posts = () => {
     );
 };
 
-/*
-<div id="posts">
-            {posts.map(postItem => {
-                setCount(count++);
-                return (
-                    <Post key={count} userImage={postItem.userImage.default} userName={postItem.userName} contentImage={postItem.contentImage.default} likedUserImage={postItem.likedUserImage.default} likedText={postItem.likedText}></Post>
-                );
-            })}
-        </div>
-*/
-
 export default Posts;
