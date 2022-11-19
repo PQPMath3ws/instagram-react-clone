@@ -5,11 +5,11 @@
     height: 54px;
     border-bottom: 1px solid #DBDBDB;
     font-size: 22px;
-    background-color: #FFF;
+    background-color: #FFFFFF;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 4;
 }
 
 #navbar .ion-icon, #navbar img {
