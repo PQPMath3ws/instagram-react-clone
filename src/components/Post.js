@@ -15,9 +15,6 @@ const Post = (props) => (
         </div>
         <div className="conteudo">
             <img src={props.contentImage} alt="" />
-            <div className={props.likedClass}>
-                {props.heart}
-            </div>
             <div className={props.spClass}>
                 <p>Seu post foi salvo com sucesso!</p>
             </div>
