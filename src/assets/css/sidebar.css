@@ -1,0 +1,12 @@
+#sidebar {
+    width: 293px;
+    padding-top: 24px;
+    position: sticky;
+    top: 88px;
+}
+
+@media (max-width: 935px) {
+    #sidebar {
+        display: none !important;
+    }
+}

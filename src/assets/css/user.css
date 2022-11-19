@@ -1,0 +1,27 @@
+#usuario {
+    display: flex;
+    align-items: center;
+}
+
+#usuario img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+
+#texto {
+    display: flex;
+    flex-direction: column;
+    margin-left: 14px;
+    font-weight: 300;
+    color: #8E8E8E;
+}
+
+#texto strong {
+    font-weight: 500;
+    color: #262626;
+}
+
+#texto .ion-icon {
+    margin-left: 10px;
+}
