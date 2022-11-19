@@ -22,6 +22,10 @@
     color: #262626;
 }
 
+#texto span {
+    cursor: pointer;
+}
+
 #texto .ion-icon {
     margin-left: 10px;
 }
