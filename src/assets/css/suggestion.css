@@ -1,0 +1,39 @@
+.sugestao {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    height: 31px;
+    margin-bottom: 16px;
+}
+
+.sugestao .usuario {
+    display: flex;
+}
+
+.sugestao .usuario img {
+    width: 32px;
+    height: 32px;
+}
+
+.sugestao .usuario .texto {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sugestao .usuario .texto :first-child {
+    font-weight: 500;
+}
+
+.sugestao .usuario .texto :last-child {
+    color: #8E8E8E;
+    font-weight: 500;
+}
+
+.sugestao .seguir {
+    color: #139EF2;
+    font-size: 14px;
+    font-weight: 600;
+}

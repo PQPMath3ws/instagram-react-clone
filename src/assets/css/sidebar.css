@@ -5,6 +5,21 @@
     top: 88px;
 }
 
+#links, #copyright {
+    font-size: 11px;
+    color: #C7C7C7;
+}
+  
+#links {
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#copyright {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
 @media (max-width: 935px) {
     #sidebar {
         display: none !important;
