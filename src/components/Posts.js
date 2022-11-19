@@ -6,14 +6,14 @@ const posts = [
         userName: "meowed",
         contentImage: require("../assets/images/gato-telefone.svg"),
         likedUserImage: require("../assets/images/respondeai.svg"),
-        likedText: "Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong>"
+        likedText: <div className="texto">Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></div>
     },
     {
         userImage: require("../assets/images/barked.svg"),
         userName: "barked",
         contentImage: require("../assets/images/dog.svg"),
         likedUserImage: require("../assets/images/adorable_animals.svg"),
-        likedText: "Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong>"
+        likedText: <div className="texto">Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong></div>
     }
 ];
 

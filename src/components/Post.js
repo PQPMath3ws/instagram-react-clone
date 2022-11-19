@@ -1,5 +1,4 @@
 import { BookmarkOutline, ChatbubbleOutline, EllipsisHorizontal, HeartOutline, PaperPlaneOutline } from 'react-ionicons';
-import parse from "html-react-parser";
 
 import "../assets/css/post.css";
 
@@ -31,9 +30,7 @@ const Post = (props) => {
                 </div>
                 <div className="curtidas">
                     <img src={props.likedUserImage} alt="" />
-                    <div className="texto">
-                        {parse(`${props.likedText}`)}
-                    </div>
+                    {props.likedText}
                 </div>
             </div>
         </div>
