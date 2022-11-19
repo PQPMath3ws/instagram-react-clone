@@ -4,6 +4,12 @@ import { BookmarkOutline, HeartOutline } from 'react-ionicons';
 import Post from "./Post";
 
 const Posts = () => {
+    let postsCount = [
+        101523,
+        99159
+    ];
+    const [postsCountState, setPostsCountState] = useState(postsCount);
+    
     let posts = [
         {
             id: 1,
@@ -14,7 +20,8 @@ const Posts = () => {
             heartOutline: HeartOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#FA383E"}, onClick:function () { likeBtn(1); }}),
             bookmarkOutline: BookmarkOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#262626"}, onClick:function () { savePost(1); }}),
             spClass: "saved-posts",
-            likedText: <div className="texto">Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong></div>
+            liked: "respondeai",
+            likedText: <div className="texto">Curtido por <strong>respondeai</strong> e <strong>outras {(postsCountState[0]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
         },
         {
             id: 2,
@@ -25,7 +32,8 @@ const Posts = () => {
             heartOutline: HeartOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#FA383E"}, onClick:function () { likeBtn(2); }}),
             bookmarkOutline: BookmarkOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#262626"}, onClick:function () { savePost(2); }}),
             spClass: "saved-posts",
-            likedText: <div className="texto">Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong></div>
+            liked: "adorable_animals",
+            likedText: <div className="texto">Curtido por <strong>adorable_animals</strong> e <strong>outras {(postsCountState[1]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
         }
     ];
 
@@ -34,10 +42,10 @@ const Posts = () => {
     let bookmarkTO = [null, null, null, null, null];
 
     function likeBtn(id) {
-        changeBtn("", id);
+        changeBtn("", id, false);
     }
 
-    function changeBtn(fillValue, id) {
+    function changeBtn(fillValue, id, isPhotoLike) {
         let post = posts.filter(post => post.id === id)[0];
         let heart = {...post.heartOutline};
         let heartProps = {...heart.props};
@@ -46,7 +54,11 @@ const Posts = () => {
         let pathChildren = {...svgProps.children[1]};
         let pathProps = {...pathChildren.props};
         if (!fillValue) fillValue = pathProps.fill;
-        pathProps.fill = fillValue === "none" ? "1" : "none";
+        if (!isPhotoLike) {
+            pathProps.fill = fillValue === "none" ? "1" : "none";
+        } else {
+            pathProps.fill = "1";
+        }
         pathChildren.props = pathProps;
         svgProps.children = ["", pathChildren];
         heartChildren.props = svgProps;
@@ -55,6 +67,12 @@ const Posts = () => {
         else heartProps.color = "#262626";
         heart.props = heartProps;
         post.heartOutline = heart;
+        if (pathProps.fill !== fillValue) {
+            if (fillValue === "none") postsCount[id - 1] = postsCount[id - 1] + 1;
+            else postsCount[id - 1] = postsCount[id - 1] - 1;
+        }
+        setPostsCountState(postsCount);
+        post.likedText = <div className="texto">Curtido por <strong>{post.liked}</strong> e <strong>outras {(postsCountState[id - 1]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
         posts = posts.map(pm => {
             if (pm.id === id) pm = post;
             return pm;
