@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BookmarkOutline, HeartOutline } from 'react-ionicons';
+import { BookmarkOutline, Heart, HeartOutline } from 'react-ionicons';
 
 import Post from "./Post";
 
@@ -16,6 +16,8 @@ const Posts = () => {
             userImage: require("../assets/images/meowed.svg"),
             userName: "meowed",
             contentImage: require("../assets/images/gato-telefone.svg"),
+            heart: Heart({cssClasses:"ion-icon", color: "#FAFAFA", width: "120px", height:"120px"}),
+            likedClass: "liked-photo",
             likedUserImage: require("../assets/images/respondeai.svg"),
             heartOutline: HeartOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#FA383E"}, onClick:function () { likeBtn(1); }}),
             bookmarkOutline: BookmarkOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#262626"}, onClick:function () { savePost(1); }}),
@@ -28,6 +30,8 @@ const Posts = () => {
             userImage: require("../assets/images/barked.svg"),
             userName: "barked",
             contentImage: require("../assets/images/dog.svg"),
+            heart: Heart({cssClasses:"ion-icon", color: "#FAFAFA", width: "120px", height:"120px"}),
+            likedClass: "liked-photo",
             likedUserImage: require("../assets/images/adorable_animals.svg"),
             heartOutline: HeartOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#FA383E"}, onClick:function () { likeBtn(2); }}),
             bookmarkOutline: BookmarkOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#262626"}, onClick:function () { savePost(2); }}),
@@ -148,7 +152,7 @@ const Posts = () => {
             {postsState.map(postItem => {
                 count++;
                 return (
-                    <Post key={"key-" + count} userImage={postItem.userImage.default} userName={postItem.userName} contentImage={postItem.contentImage.default} likedUserImage={postItem.likedUserImage.default} heartOutline={postItem.heartOutline} bookmarkOutline={postItem.bookmarkOutline} spClass={postItem.spClass} likedText={postItem.likedText}></Post>
+                    <Post key={"key-" + count} userImage={postItem.userImage.default} userName={postItem.userName} contentImage={postItem.contentImage.default} heart={postItem.heart} likedClass={postItem.likedClass} likedUserImage={postItem.likedUserImage.default} heartOutline={postItem.heartOutline} bookmarkOutline={postItem.bookmarkOutline} spClass={postItem.spClass} likedText={postItem.likedText}></Post>
                 );
             })}
         </div>
