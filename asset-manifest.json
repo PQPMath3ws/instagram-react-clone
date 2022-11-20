@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1c72ae5c.css",
+    "main.js": "/static/js/main.5900b6fa.js",
+    "static/media/dog.svg": "/static/media/dog.18d8dfbfcf559b6ee15eaff0d9f8e682.svg",
+    "static/media/gato-telefone.svg": "/static/media/gato-telefone.ab4b8b525ff6b059d86320fc4ef4d363.svg",
+    "static/media/story-circle.svg": "/static/media/story-circle.55116c7dad150d3ac2c9d86774a818e2.svg",
+    "static/media/filomoderna.svg": "/static/media/filomoderna.dcc7a936d2299c2712d0ddf70d21df43.svg",
+    "static/media/bad.vibes.memes.svg": "/static/media/bad.vibes.memes.f34ffa96a515d276d4bb981ebb8aeffd.svg",
+    "static/media/catanacomics.svg": "/static/media/catanacomics.5eaf0eb1a077e262fafa98acd4cded98.svg",
+    "static/media/adorable_animals.svg": "/static/media/adorable_animals.5e00bfea8c67b4ac2c8f9b619643c353.svg",
+    "static/media/smallcutecats.svg": "/static/media/smallcutecats.c4b1323a71c0e2c991a65dc3acc8ad12.svg",
+    "static/media/nathanwpylestrangeplanet.svg": "/static/media/nathanwpylestrangeplanet.53e1cd6aad5068d5145480a96cf7b6b1.svg",
+    "static/media/memeriagourmet.svg": "/static/media/memeriagourmet.072fec7f4e9805b182a2375578acc55a.svg",
+    "static/media/respondeai.svg": "/static/media/respondeai.7b1592a4537df9500e36342a29041b67.svg",
+    "static/media/razoesparaacreditar.svg": "/static/media/razoesparaacreditar.d31055c3fcd6299869c6c516c54930d2.svg",
+    "static/media/barked.svg": "/static/media/barked.4452c738e45ef1655259d1266d67d877.svg",
+    "static/media/9gag.svg": "/static/media/9gag.0a0a7f7fc86a895dda9671506292f0d3.svg",
+    "static/media/wawawicomics.svg": "/static/media/wawawicomics.84014cd369c8cb6b235121ec223b2c90.svg",
+    "static/media/meowed.svg": "/static/media/meowed.bcb35bd4e1291bdfac864ad6dbf0968f.svg",
+    "index.html": "/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.1c72ae5c.css",
+    "static/js/main.5900b6fa.js"
+  ]
+}
