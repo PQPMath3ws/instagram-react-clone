@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/instagram-react-clone/static/css/main.1c72ae5c.css",
-    "main.js": "/instagram-react-clone/static/js/main.a02ac70a.js",
+    "main.js": "/instagram-react-clone/static/js/main.2adac182.js",
     "static/media/dog.svg": "/instagram-react-clone/static/media/dog.18d8dfbfcf559b6ee15eaff0d9f8e682.svg",
     "static/media/gato-telefone.svg": "/instagram-react-clone/static/media/gato-telefone.ab4b8b525ff6b059d86320fc4ef4d363.svg",
     "static/media/story-circle.svg": "/instagram-react-clone/static/media/story-circle.55116c7dad150d3ac2c9d86774a818e2.svg",
@@ -22,6 +22,6 @@
   },
   "entrypoints": [
     "static/css/main.1c72ae5c.css",
-    "static/js/main.a02ac70a.js"
+    "static/js/main.2adac182.js"
   ]
 }
