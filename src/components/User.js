@@ -24,13 +24,13 @@ const User = () => {
     }
 
     return (
-        <div id="usuario">
-            <img src={userImage} alt="" onClick={changeUserImage} />
+        <div id="usuario" data-test="user">
+            <img src={userImage} alt="" onClick={changeUserImage} data-test="profile-image" />
             <div id="texto">
                 <strong>catanacomics</strong>
-                <span>
+                <span data-test="name">
                     {userName}
-                    <Pencil cssClasses="ion-icon" color="#8E8E8E" width="14px" height="14px" onClick={changeUsername}></Pencil>
+                    <Pencil cssClasses="ion-icon" color="#8E8E8E" width="14px" height="14px" onClick={changeUsername} data-test="edit-name"></Pencil>
                 </span>
             </div>
         </div>

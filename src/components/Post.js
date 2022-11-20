@@ -3,7 +3,7 @@ import { ChatbubbleOutline, EllipsisHorizontal, PaperPlaneOutline } from 'react-
 import "../assets/css/post.css";
 
 const Post = (props) => (
-    <div className="post">
+    <div className="post" data-test="post">
         <div className="topo">
             <div className="usuario">
                 <img src={props.userImage} alt="" />

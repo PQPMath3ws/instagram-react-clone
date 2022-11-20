@@ -23,7 +23,7 @@ const Posts = () => {
             bookmarkOutline: BookmarkOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#262626"}, onClick:function () { savePost(1); }}),
             spClass: "saved-posts",
             liked: "respondeai",
-            likedText: <div className="texto">Curtido por <strong>respondeai</strong> e <strong>outras {(postsCountState[0]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
+            likedText: <div className="texto">Curtido por <strong>respondeai</strong> e <strong data-test="likes-number">outras {(postsCountState[0]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
         },
         {
             id: 2,
@@ -35,7 +35,7 @@ const Posts = () => {
             bookmarkOutline: BookmarkOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#262626"}, onClick:function () { savePost(2); }}),
             spClass: "saved-posts",
             liked: "pqpmath3ws",
-            likedText: <div className="texto">Curtido por <strong>pqpmath3ws</strong> e <strong>outras {(postsCountState[1]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
+            likedText: <div className="texto">Curtido por <strong>pqpmath3ws</strong> e <strong data-test="likes-number">outras {(postsCountState[1]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
         },
         {
             id: 3,
@@ -47,7 +47,7 @@ const Posts = () => {
             bookmarkOutline: BookmarkOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#262626"}, onClick:function () { savePost(3); }}),
             spClass: "saved-posts",
             liked: "adorable_animals",
-            likedText: <div className="texto">Curtido por <strong>adorable_animals</strong> e <strong>outras {(postsCountState[2]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
+            likedText: <div className="texto">Curtido por <strong>adorable_animals</strong> e <strong data-test="likes-number">outras {(postsCountState[2]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
         },
         {
             id: 4,
@@ -55,11 +55,11 @@ const Posts = () => {
             userName: "driven.education",
             contentImage: "https://scontent.fmoc4-1.fna.fbcdn.net/v/t39.30808-6/309450913_413226097662190_7440088751221015583_n.png?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFyrtbFRniahmWpqjx5HDcq8dYD4Ne44Kbx1gPg17jgplpomy3CEk4pc7h-SaBu4NDS0UCgNecZd3NUKjMXiFXj&_nc_ohc=5QXkliA9O9cAX_KFIQ7&_nc_ht=scontent.fmoc4-1.fna&oh=00_AfA_FOerTrta6m0rmfV6QsaoWc0_LkP7euLLEMYCVVXs2Q&oe=637EC607",
             likedUserImage: "https://scontent.fmoc4-1.fna.fbcdn.net/v/t39.30808-6/227475572_126738002977669_128015777806440481_n.png?_nc_cat=101&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeFxPVDFLq4_s-2lHvbVnKE5joVt9-QlfVSOhW335CV9VG6Voe61FJv4-8SN9rCBes6xM-rvubYoJrLAW78kKDGz&_nc_ohc=6vvroJ7XxgUAX_Cu7QI&_nc_ht=scontent.fmoc4-1.fna&oh=00_AfDrRyBjJc5Bitt24G2xOCvlnmsoLBE2b7KZeKTSJM7G5A&oe=637F4CD7",
-            heartOutline: HeartOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#FA383E"}, onClick:function () { likeBtn(4); }}),
-            bookmarkOutline: BookmarkOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#262626"}, onClick:function () { savePost(4); }}),
+            heartOutline: HeartOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#FA383E"}, onClick:function () { likeBtn(4); }, "data-test": "like-post"}),
+            bookmarkOutline: BookmarkOutline({cssClasses:"ion-icon", color:"#262626", width:"24px", height:"24px", style: {fill: "#262626"}, onClick:function () { savePost(4); }, "data-test": "save-post"}),
             spClass: "saved-posts",
             liked: "driven.education",
-            likedText: <div className="texto">Curtido por <strong>driven.education</strong> e <strong>outras {(postsCountState[3]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
+            likedText: <div className="texto">Curtido por <strong>driven.education</strong> e <strong data-test="likes-number">outras {(postsCountState[3]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
         },
     ];
 
@@ -98,7 +98,7 @@ const Posts = () => {
             else postsCount[id - 1] = postsCount[id - 1] - 1;
         }
         setPostsCountState(postsCount);
-        post.likedText = <div className="texto">Curtido por <strong>{post.liked}</strong> e <strong>outras {(postsCountState[id - 1]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
+        post.likedText = <div className="texto">Curtido por <strong>{post.liked}</strong> e <strong data-test="likes-number">outras {(postsCountState[id - 1]).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".")} pessoas</strong></div>
         posts = posts.map(pm => {
             if (pm.id === id) pm = post;
             return pm;
