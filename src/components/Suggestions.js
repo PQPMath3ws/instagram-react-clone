@@ -9,7 +9,7 @@ const suggestions = [
         userStatus: "Segue você"
     },
     {
-        userImage: "https://scontent-prg1-1.cdninstagram.com/v/t51.2885-19/432264055_1087299835659296_3973590506900206786_n.jpg?_nc_ht=scontent-prg1-1.cdninstagram.com&_nc_cat=108&_nc_ohc=-F5p-PbJ4e8Q7kNvgF04nZc&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYCsN5a9mHCtdCZMbQRTs29a-ofgLgLijVNYg-x6o3V0vQ&oe=666567F5&_nc_sid=1e20d2",
+        userImage: require("../assets/images/pqpmath3ws.svg").default,
         userName: "pqpmath3ws",
         userStatus: "Novo no Instagram"
     },
@@ -19,7 +19,7 @@ const suggestions = [
         userStatus: "Novo no Instagram"
     },
     {
-        userImage: "https://instagram.fbts9-1.fna.fbcdn.net/v/t51.2885-19/225779500_345952210555486_912384195934464447_n.jpg?_nc_ht=instagram.fbts9-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=q4TUa1qUR1wQ7kNvgHl8yBD&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYDYVhKDpxHQ3-u0fX341czc5FMGi0AFLK8vzvwW0ACwAw&oe=66661FE2&_nc_sid=1e20d2",
+        userImage: require("../assets/images/driven.education.svg").default,
         userName: "driven.education",
         userStatus: "Segue você"
     },
