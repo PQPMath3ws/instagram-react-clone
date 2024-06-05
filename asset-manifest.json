@@ -1,9 +1,11 @@
 {
   "files": {
     "main.css": "/instagram-react-clone/static/css/main.1c72ae5c.css",
-    "main.js": "/instagram-react-clone/static/js/main.046d9619.js",
+    "main.js": "/instagram-react-clone/static/js/main.dae03781.js",
+    "static/media/pqpmath3ws.svg": "/instagram-react-clone/static/media/pqpmath3ws.1fc5f3ff00f0e73bcd7d922f2fc983e5.svg",
     "static/media/dog.svg": "/instagram-react-clone/static/media/dog.18d8dfbfcf559b6ee15eaff0d9f8e682.svg",
     "static/media/gato-telefone.svg": "/instagram-react-clone/static/media/gato-telefone.ab4b8b525ff6b059d86320fc4ef4d363.svg",
+    "static/media/driven.education.svg": "/instagram-react-clone/static/media/driven.education.bf47c6974599c39a4a320c4690ae63ac.svg",
     "static/media/story-circle.svg": "/instagram-react-clone/static/media/story-circle.55116c7dad150d3ac2c9d86774a818e2.svg",
     "static/media/filomoderna.svg": "/instagram-react-clone/static/media/filomoderna.dcc7a936d2299c2712d0ddf70d21df43.svg",
     "static/media/bad.vibes.memes.svg": "/instagram-react-clone/static/media/bad.vibes.memes.f34ffa96a515d276d4bb981ebb8aeffd.svg",
@@ -22,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.1c72ae5c.css",
-    "static/js/main.046d9619.js"
+    "static/js/main.dae03781.js"
   ]
 }
